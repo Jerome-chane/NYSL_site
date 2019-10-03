@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/nysl_custom.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+        <header>
+                
+            <div id="top_page" class= "h1title">
+                    <img src="./images/nysl_logo_blacknwhite.png" alt="NYSL logo" class="logo"/>
+                <h1>Northside Youth Soccer League</h1>
+            </div>   
+    
+            <div class="links">
+                <ul>
+                    <li><a href="./index.html" class="link home">Home</a></li> 
+                    <li><a href="about.html" class= "link about">About NYSL</a></li>
+                    <li><a href="./game_info.html" class= "link gameinfo">Game Info</a></li>                                         
+                    <li><a href="./form.html" class="link form">Registration</a></li>
+                    <li><a href="./rules.html" class= "link rule">Rules</a></li>
+                    <li><a href="contact.html" class="link contact">Contact</a></li> 
+                </ul>
+            </div>
+        </header>
+    
+        <main>
+
+            <div class="form">
+              <form action="./show_data.html" method="GET">             
+             <!-- Input forms -->
+                <div class="contact_details">
+                    <label class="names" for="fname">First name: <input type="text" id="fname" name="fname" placeholder="Your name.." required></label>  
+                    <label class="names" for="lname">Last name: <input type="text" id="lname" name="lname" placeholder="Yout last name.." required></label>
+
+                    <label class="street" for="street-address">Street Address: <input type="text" id="street-address" name="street-address" placeholder="Your street.." required></label>
+
+                    <label class="city" for="city">City: <input type="text" id="city" name="city" placeholder="Your city.." required></label> 
+                    <label class="zip" for="zip_code">Zip Code: <input type="text" id="zip_code" name="zip_code" placeholder="Your zip code.." required></label> 
+
+                    <label class="bdate" for="bdate">Birth Date: <input type="text" name="birth_date" placeholder="dd/mm/yyyy" id="bdate" required> </label>       
+                         
+             <!-- Gender & Grade -->
+                    <div class="gender">
+                        <span>Gender:</span>
+                        <label for="male">Male <input type="radio" id="male" name="gender" value="male" required></label>
+                        <label for="female">Female <input type="radio" id="female" name="gender" value="female"></label>
+                    </div>
+                
+
+                    <div class="grade">
+                        <span>Grade:</span>
+                        <label for="Pre-School"><input type="radio" id="Pre-School" name="grade" value="Pre-School" checked> Pre-School</label>
+                        <label for="1st"><input type="radio" id="1st" name="grade" value="1st"> 1st</label>
+                        <label for="2nd"><input type="radio" id="2nd" name="grade" value="2nd"> 2nd</label>
+                        <label for="3rd"><input type="radio" id="3rd" name="grade" value="3rd"> 3rd</label>
+                        <label for="4th"><input type="radio" id="4th" name="grade" value="4th"> 4th</label>
+                        <label for="5th"><input type="radio" id="5th" name="grade" value="5th"> 5th</label>
+                    </div>
+             <!-- Parent/Guardian contact details -->
+
+                    <label class="parent" for="parent_guardian">Parent/Guardian: <input type="text" id="parent_guardian" name="parent_guardian" placeholder="Your parent or guardian.." required></label>
+
+                    <label class="phone" for="contact_phone">Contact Phone: <input type="tel" id="contact_phone"  name="contact_phone" placeholder="Your phone number.." required></label>                                               
+                    <label class="email" for="contact_email">Contact E-mail: <input type="email" id="contact_email"  name="contact_email" placeholder="example@gmail.com" required></label>  
+                </div>                                                      
+                           
+             <!-- Elementary School -->
+                    <span class="bold">Which elementary schools do you live near? </span>                               
+                    <span class="bold school">First Closest School: </span>
+                        <select name="first_closest_school">
+                            <option value="">AJ Katzenmaier</option>
+                            <option value="">Greenbay</option>
+                            <option value="">Howard A Yeager</option>
+                            <option value="">Marjorie P Hart</option>  
+                            <option value="">SNorth Elementary</option>
+                            <option value="">South Elementary</option>
+                        </select>                 
+                             
+                        
+                    <span class="bold school">Second Closest School: </span>
+                        <select name="second_closest_school">
+                            <option value="">AJ Katzenmaier</option>
+                            <option value="">Greenbay</option>
+                            <option value="">Howard A Yeager</option>
+                            <option value="">Marjorie P Hart</option>
+                            <option value="">North Elementary</option>
+                            <option value="">South Elementary</option>
+                        </select>                            
+                    
+             <!-- Position -->
+                        <p class="bold position">What position(s) do you normally play? (check all that apply)</p>
+                        
+                            <input type="checkbox" id="Forward" name="position" value="Forward" checked>     <label for="Forward">Forward</label>
+                            <input type="checkbox" id="Midfield" name="position" value="Midfield">           <label for="Midfield">Midfield</label><br>
+                            <input type="checkbox" id="Defence" name="position" value="Defence">             <label for="Defence">Defence</label>
+                            <input type="checkbox" id="Goalkeeper" name="position" value="Goalkeeper">       <label for="Goalkeeper">Goalkeeper</label>
+                         
+                        <p class="bold position">What position(s) do you want to play? (check all that apply)</p>
+
+                            <input type="checkbox" id="Forward2" name="position2" value="Forward2" checked>  <label for="Forward2">Forward</label>
+                            <input type="checkbox" id="Midfield2" name="position2" value="Midfield2">        <label for="Midfield2">Midfield</label><br>
+                            <input type="checkbox" id="Defense2" name="position2" value="Defense2">          <label for="Defense2">Defence</label>  
+                            <input type="checkbox" id="Goalkeeper2" name="position" value="Goalkeeper2">     <label for="Goalkeeper2">Goalkeeper</label>
+                         
+             <!-- Uniform  -->
+                            <div>
+                                <p class="bold">Do you already have a Uniform?</p>
+                                    <input type="radio" id="Yes" name="uniform" value="Yes">        <label for="Yes">Yes</label>
+                                    <input type="radio" id="No" name="uniform" value="No" checked>  <label for="No">No</label>
+                            </div>
+
+             <!-- Jersey Size -->
+                            <div class="jsize">
+                                <p class="bold">Jersey Size:</p>
+                                    <input type="radio" id="jyouth_small" name="jersey_size" value="youth_small" checked>    <label class="s" for="jyouth_small">Youth Small</label>
+                                    <input type="radio" id="jmedium" name="jersey_size" value="jmedium">                     <label for="jmedium">Medium</label><br>
+                                    <input type="radio" id="jyouth_medium" name="jersey_size" value="jyouth_medium">         <label for="jyouth_medium">Youth Medium</label>
+                                    <input type="radio" id="jlarge" name="jersey_size" value="jlarge">                       <label for="jlarge">Large</label><br>
+                                    <input type="radio" id="jyouth_large" name="jersey_size" value="jyouth_large">           <label class="s" for="jyouth_large">Youth Large</label>
+                                    <input type="radio" id="jextra_large" name="jersey_size" value="jextra_large">           <label for="jextra_large">Extra-Large</label><br>
+                                    <input type="radio" id="jsmall" name="jersey_size" value="jsmall">                       <label for="jsmall">Small</label>
+                                </div>
+                                <div class="ssize">
+             <!-- Shorts Size -->
+                                <p class="bold">Shorts Size:</p>
+                                    <input type="radio" id="syouth_small" name="shorts_size" value="syouth_small" checked>   <label class="s" for="syouth_small">Youth Small</label>
+                                    <input type="radio" id="smedium" name="shorts_size" value="smedium">                     <label for="smedium">Medium</label><br>
+                                    <input type="radio" id="syouth_medium" name="shorts_size" value="syouth_medium">         <label for="syouth_medium">Youth Medium</label>
+                                    <input type="radio" id="slarge" name="shorts_size" value="slarge">                       <label for="slarge">Large</label><br>
+                                    <input type="radio" id="syouth_large" name="shorts_size" value="syouth_large">           <label class="s" for="syouth_large">Youth Large</label>
+                                    <input type="radio" id="sextra_large" name="shorts_size" value="sextra_large">           <label for="sextra_large">Extra-Large</label><br>
+                                    <input type="radio" id="ssmall" name="shorts_size" value="ssmall">                       <label for="ssmall">Small</label>
+                                </div>
+                            
+                        
+                     <br>
+                     <br> 
+                     <br>
+                     <br>
+             <!-- Permission to play txt -->
+                        <span class="bold underline permission">Permission to Play</span>
+                            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>        
+             <!-- Permission to play Checkbox & Date -->
+                            <input type="checkbox" id="signature" name="signature" value="signature" required>  <label for="signature">By checking this box, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</label><br>                               
+                            <label for="date">Date: </label>
+                            <input type="text" id="date" name="sign_date" placeholder="dd/mm/yyyy" required>
+
+             <!-- Submit button -->
+                            <input type="Submit" name="Submit" value="Submit" class="submit">
+                      
+</form>
+
+            </div>
+              
+
+</main>
+
+<div class="scroll_up_button">
+        <a class="scroll_up" href="#top_page"><img alt="scroll_up_img" src="./images/607570-200.png"></a>
+</div>
+
+<!-- Footer made of 3 divs that contains text and Ul with links -->
+<footer>
+ 
+        <div class="footer_widgets">
+                
+            <div class="sidebarbox sidebar_text">
+                <h3>About Our Team</h3>
+                <p>The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhood an environment to learn and play soccer. To be a member of NYSL, you must be between the ages of 4-12 and reside in a Chicago northside neighborhood. NYSL is run by a small, full-time staff, and relies on the generous volunteed time of parents and former league members.</p>
+                <p><a class="footer_link" href="./about.html"><b>Read More..</b></a></p>
+            </div>
+
+
+            <div class="sidebarbox footer_second_column foot_links footer_news">               
+                <h3>News</h3>
+                <ul>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/goal-fabian-herbers-delivers-lead-header?autoplay=true" target="_blank">GOAL | Herbers delivers the lead on a header</a>
+                        <span class="post-date">September 28, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/chicago-fire-draw-toronto-fc-2-2-last-home-match-season" target="_blank">Fire draw Toronto FC 2-2 in last home match of the season</a>
+                        <span class="post-date">September 29, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/highlights-chicago-fire-2-2-toronto-fc-september-29-2019?autoplay=true" target="_blank">HIGHLIGHTS: Chicago Fire 2-2 Toronto FC</a>
+                        <span class="post-date">September 29, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/28/back-beginning-oral-history-first-chicago-fire-game-bridgeview" target="_blank">An oral history of the first Fire game in Bridgeview</a>
+                        <span class="post-date">September 28, 2019</span></li>
+                </ul>               
+            </div>
+
+
+             <div class="sidebarbox footer_third_column foot_links footer_recomendations">               
+                <h3>Recomendations</h3>
+                <ul>
+                    <li><a href="https://www.chicagobears.com/team/players-roster/" target="_blank">Chicago Bears Team</a>
+                        <span class="post-date">April 11, 2017</span></li>
+                    <li><a href="https://operations.nfl.com/" target="_blank">NFL Operations</a>
+                        <span class="post-date">October 12, 2018</span></li>
+                    <li><a href="https://www.kicsunited.org/" target="_blank">Kicks United</a>
+                        <span class="post-date">December 24, 2018</span></li>
+                    <li><a href="https://www.kicscup.org/" target="_blank">Kicks International Showcase</a>
+                        <span class="post-date">January 11, 2018</span></li>
+                </ul>                                    
+             </div>
+     
+
+        </div>
+                <div class="copyright">
+                    <p>Copyright © 2019 NYSL All rights reserved</p>
+                </div>
+    </footer>
+</body>
+</html>

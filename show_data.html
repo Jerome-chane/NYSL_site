@@ -1,0 +1,136 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="style/nysl_custom.css">
+<head>
+<title>Feedback Sent</title>
+</head>
+<body class="data_form">
+    
+    <header>
+        
+    <div class= "h1title">
+            <img src="./images/nysl_logo_blacknwhite.png" alt="NYSL logo" class="logo"/>
+        <h1>Northside Youth Soccer League</h1>
+    </div>   
+
+    <div class="links">
+        <ul>
+            <li><a href="./index.html" class="link home">Home</a></li> 
+            <li><a href="about.html" class= "link about">About NYSL</a></li>
+            <li><a href="./game_info.html" class= "link gameinfo">Game Info</a></li>                                         
+            <li><a href="./form.html" class="link form">Registration</a></li>
+            <li><a href="./rules.html" class= "link rule">Rules</a></li>
+            <li><a href="contact.html" class="link contact">Contact</a></li> 
+        </ul>
+    </div>
+</header>
+
+<main>
+  
+    <h2 class="top">NYSL Form Data</h2>
+
+
+<p align=center>&nbsp;</p>
+<h1 align=center><font size="+1">Congratulations we have a new member! </font></h1>
+
+<table border="1" align=center width="226" class="table_data">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</main>
+<!-- Footer made of 3 divs that contains text and Ul with links -->
+<footer>
+ 
+        <div class="footer_widgets">
+                
+            <div class="sidebarbox sidebar_text">
+                <h3>About Our Team</h3>
+                <p>The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhood an environment to learn and play soccer. To be a member of NYSL, you must be between the ages of 4-12 and reside in a Chicago northside neighborhood. NYSL is run by a small, full-time staff, and relies on the generous volunteed time of parents and former league members.</p>
+                <p><a class="footer_link" href="./about.html"><b>Read More..</b></a></p>
+            </div>
+
+
+            <div class="sidebarbox footer_second_column foot_links footer_news">               
+                <h3>News</h3>
+                <ul>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/goal-fabian-herbers-delivers-lead-header?autoplay=true" target="_blank">GOAL | Herbers delivers the lead on a header</a>
+                        <span class="post-date">September 28, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/chicago-fire-draw-toronto-fc-2-2-last-home-match-season" target="_blank">Fire draw Toronto FC 2-2 in last home match of the season</a>
+                        <span class="post-date">September 29, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/29/highlights-chicago-fire-2-2-toronto-fc-september-29-2019?autoplay=true" target="_blank">HIGHLIGHTS: Chicago Fire 2-2 Toronto FC</a>
+                        <span class="post-date">September 29, 2019</span></li>
+                    <li><a href="https://www.chicago-fire.com/post/2019/09/28/back-beginning-oral-history-first-chicago-fire-game-bridgeview" target="_blank">An oral history of the first Fire game in Bridgeview</a>
+                        <span class="post-date">September 28, 2019</span></li>
+                </ul>               
+            </div>
+
+
+             <div class="sidebarbox footer_third_column foot_links footer_recomendations">               
+                <h3>Recomendations</h3>
+                <ul>
+                    <li><a href="https://www.chicagobears.com/team/players-roster/" target="_blank">Chicago Bears Team</a>
+                        <span class="post-date">April 11, 2017</span></li>
+                    <li><a href="https://operations.nfl.com/" target="_blank">NFL Operations</a>
+                        <span class="post-date">October 12, 2018</span></li>
+                    <li><a href="https://www.kicsunited.org/" target="_blank">Kicks United</a>
+                        <span class="post-date">December 24, 2018</span></li>
+                    <li><a href="https://www.kicscup.org/" target="_blank">Kicks International Showcase</a>
+                        <span class="post-date">January 11, 2018</span></li>
+                </ul>                                    
+             </div>
+     
+
+        </div>
+                <div class="copyright">
+                    <p>Copyright © 2019 NYSL All rights reserved</p>
+                </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+header {
+    background-image: url(./image/design2_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+h1 {
+    word-spacing: 20px;
+    font-family: Comic Sans MS;
+    background: white;
+    margin-top: -1.5%;
+}
+
+h2 {
+    border: solid;
+    border-color: black;
+    background: white;
+    text-align:center;
+    margin-top:0px;
+}
+
+.logo {
+    position: absolute;
+    max-height: 100px;
+}
+
+.links li {
+    display: inline-block;
+    padding-left: 60px;
+}
+
+.links {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.link {
+    text-decoration:none;
+    border: solid;
+    border-color: black;
+    color: white;
+    background-color: rgb(8, 83, 148);
+   box-shadow: 3px 3px #000000;
+   top: 4%;
+}
+
+.link:hover {
+    background-color:green;
+}
+
+
+.text {
+    display: inline-block;
+    margin-left: 17%;
+    
+}
